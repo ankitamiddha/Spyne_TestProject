@@ -63,6 +63,8 @@ allure generate
 **Open Allure Reports:**
 allure open
 
+(To view the latest report, go to the target--> allure-reports--> open index.html in browser)
+
 **Design Pattern -** Page Object Model (POM) Implemented
 
 The project employs the Page Object Model design pattern for better code organization and maintainability.
