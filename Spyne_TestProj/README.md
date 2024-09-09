@@ -27,12 +27,19 @@ Maven and Allure installed on the system
 The project follows a standard Maven project structure:
 
 **src/main/java:** Contains base classes, listeners, page objects, and utility classes related to the tests.
+
 **src/main/resources:** Stores configuration files (allure.properties, config.properties), sample image and text files.
+
 **src/test/java:** Holds the com.qa.testcases package containing test case classes.
+
 **pom.xml:** Defines project dependencies and build configuration.
+
 **testing.xml:** The TestNG runner file.
+
 **README.md:** This file (you're reading it!).
+
 **target:** Stores Allure report artifacts after test execution.
+
 
 **Command to Run Tests:**
 
