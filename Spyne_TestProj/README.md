@@ -13,31 +13,47 @@ Spyne.ai Image Upscaler: https://www.spyne.ai/image-upscaler
 **Tools & Technologies**
 
 **Programming Language:** Java
+
 **Automation Framework:** Selenium WebDriver
+
 **Test Runner:** TestNG
+
 **Reporting:** Allure Reports
+
 **Browsers Supported:** Chrome, Firefox, Edge (including headless mode)
+
 
 **Prerequisites**
 Java 1.8
 IDE (e.g., IntelliJ IDEA)
 Maven and Allure installed on the system
+This framework is created on Windows 11
 
 **Project Structure**
 The project follows a standard Maven project structure:
 
 **src/main/java:** Contains base classes, listeners, page objects, and utility classes related to the tests.
+
 **src/main/resources:** Stores configuration files (allure.properties, config.properties), sample image and text files.
+
 **src/test/java:** Holds the com.qa.testcases package containing test case classes.
+
 **pom.xml:** Defines project dependencies and build configuration.
+
 **testing.xml:** The TestNG runner file.
+
 **README.md:** This file (you're reading it!).
+
 **target:** Stores Allure report artifacts after test execution.
+
 
 **Command to Run Tests:**
 
 Go to the directory - Spyne_TestProject\Spyne_TestProj and run-
 mvn test
+
+Or
+Run the testng.xml file
 
 **Command to Generate Reports:**
 
@@ -45,7 +61,6 @@ Go to the directory - Spyne_TestProj/target and run -
 allure generate
 
 **Open Allure Reports:**
-
 allure open
 
 **Design Pattern -** Page Object Model (POM) Implemented
