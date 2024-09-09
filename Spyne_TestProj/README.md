@@ -45,7 +45,6 @@ Go to the directory - Spyne_TestProj/target and run -
 allure generate
 
 **Open Allure Reports:**
-
 allure open
 
 **Design Pattern -** Page Object Model (POM) Implemented
