@@ -1,4 +1,4 @@
-package com.qa.implementation;
+package com.qa.testcases;
 
 import base.Base;
 import org.openqa.selenium.JavascriptExecutor;
@@ -21,7 +21,7 @@ public class TestCasesScaling extends Base {
 // TC004 - Verify the scaling process is successful. Verify the buttons, Upload button, Process button
 // and Download button are present.
 // Pre-requisite - user should be logged in to perform scaling process.
-    @Test()
+    @Test(priority = 2)
     public void verifyScalingProcess() throws AWTException {
         testCasesDashboard.validFileUpload();
         scalingPage = new ScalingPage(driver);
@@ -33,7 +33,8 @@ public class TestCasesScaling extends Base {
 
 // TC002 - Test the functionality of upload of png image format
 // TC005 - Test functionality of Upload button on scaling screen
-    @Test(enabled = false)
+// TC006 - Download image
+    @Test(priority = 1)
     public void uploadButton() throws AWTException {
         testCasesDashboard.validFileUpload();
         scalingPage = new ScalingPage(driver);

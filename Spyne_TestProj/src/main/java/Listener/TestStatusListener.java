@@ -16,7 +16,7 @@ public class TestStatusListener extends Base implements ITestListener {
     public void onTestFailure(ITestResult result) {
         System.out.println("Test case failed");
         try {
-//            FailedScreenshot(result.getName());
+            FailedScreenshot(result.getName());
             Allure.addAttachment("Screenshot captured", new ByteArrayInputStream(((TakesScreenshot) driver).getScreenshotAs(OutputType.BYTES)));
         } catch (Exception e) {
             e.printStackTrace();

@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="All Test Suite">
+    <listeners>
+        <listener class-name="Listener.TestStatusListener"/>
+    </listeners>
+    <test name="HeadLessTest">
+        <parameter name="browser" value="headless"/>
+        <classes>
+            <class name="com.qa.testcases.TestCasesDashboard"/>
+            <class name="com.qa.testcases.TestCasesScaling"/>
+        </classes>
+    </test>
+    <test name="ChromeTest">
+        <parameter name="browser" value="chrome"/>
+        <classes>
+        <class name="com.qa.testcases.TestCasesDashboard"/>
+            <class name="com.qa.testcases.TestCasesScaling"/>
+        </classes>
+    </test>
+    <test verbose="2" preserve-order="true" name="EdgeTest">
+        <parameter name="browser" value="edge"/>
+        <classes>
+            <class name="com.qa.testcases.TestCasesDashboard"/>
+            <class name="com.qa.testcases.TestCasesScaling"/>
+        </classes>
+    </test>
+    <test verbose="2" preserve-order="true" name="FirefoxTest">
+        <parameter name="browser" value="firefox"/>
+        <classes>
+            <class name="com.qa.testcases.TestCasesDashboard"/>
+            <class name="com.qa.testcases.TestCasesScaling"/>
+        </classes>
+    </test>
+</suite>

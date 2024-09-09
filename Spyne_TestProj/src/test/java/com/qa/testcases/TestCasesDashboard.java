@@ -1,4 +1,4 @@
-package com.qa.implementation;
+package com.qa.testcases;
 
 import base.Base;
 import org.openqa.selenium.support.ui.ExpectedConditions;
@@ -17,7 +17,7 @@ public class TestCasesDashboard extends Base {
     WebDriverWait wait;
 
 //    TC001 - checks current url and elements present on page like - Get a demo button, spyne logo, pagetitle
-    @Test(enabled = false)
+    @Test(priority = 1)
     public void checkBasicDetails() {
         dp = new DashboardPage(driver);
         String actualUrl = driver.getCurrentUrl();
@@ -30,7 +30,7 @@ public class TestCasesDashboard extends Base {
 
 
 //  TC002 - File upload functionality - jpg format
-    @Test(enabled = false)
+    @Test(priority = 2)
     public void validFileUpload() throws AWTException {
         dp = new DashboardPage(driver);
         String validImage = new File("src/main/resources/Sample-jpg-image.jpg").getAbsolutePath();
@@ -44,7 +44,7 @@ public class TestCasesDashboard extends Base {
     }
 
 // TC003 - Invalid file format validation
-    @Test(enabled = false)
+    @Test(priority = 3)
     public void invalidFileUpload() throws AWTException {
         dp = new DashboardPage(driver);
         String invalidImage = new File("src/main/resources/New Text Document.txt").getAbsolutePath();
