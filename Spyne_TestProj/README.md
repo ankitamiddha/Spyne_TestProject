@@ -13,15 +13,21 @@ Spyne.ai Image Upscaler: https://www.spyne.ai/image-upscaler
 **Tools & Technologies**
 
 **Programming Language:** Java
+
 **Automation Framework:** Selenium WebDriver
+
 **Test Runner:** TestNG
+
 **Reporting:** Allure Reports
+
 **Browsers Supported:** Chrome, Firefox, Edge (including headless mode)
+
 
 **Prerequisites**
 Java 1.8
 IDE (e.g., IntelliJ IDEA)
 Maven and Allure installed on the system
+This framework is created on Windows 11
 
 **Project Structure**
 The project follows a standard Maven project structure:
@@ -45,6 +51,9 @@ The project follows a standard Maven project structure:
 
 Go to the directory - Spyne_TestProject\Spyne_TestProj and run-
 mvn test
+
+Or
+Run the testng.xml file
 
 **Command to Generate Reports:**
 
